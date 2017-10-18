@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ren.test.swipemenurefreshview.widget.SwipeMenuRefreshView
+    <ren.widget.refresh.SwipeMenuRefreshView
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,5 +16,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" />
-    </ren.test.swipemenurefreshview.widget.SwipeMenuRefreshView>
+    </ren.widget.refresh.SwipeMenuRefreshView>
 </RelativeLayout>
