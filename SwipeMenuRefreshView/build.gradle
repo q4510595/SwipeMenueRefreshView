@@ -1,6 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'//添加
+apply plugin: 'com.github.dcendents.android-maven'
+// alidili改成你的GitHub账户名
+group = 'com.github.xypmhxy'
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
