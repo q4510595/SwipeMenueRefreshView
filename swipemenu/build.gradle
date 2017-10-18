@@ -1,18 +1,37 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
+apply plugin: 'com.github.dcendents.android-maven'
+// alidili改成你的GitHub账户名
+group = 'com.github.xypmhxy'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 23
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
 dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.0'
     compile 'com.android.support:support-v4:23.1.0'
+}
+//添加
+publish {
+    artifactId = 'SwipeMenu'
+    userOrg = rootProject.userOrg
+    groupId = rootProject.groupId
+    uploadName = rootProject.uploadName
+    publishVersion = rootProject.publishVersion
+    repoName = rootProject.repoName
+    desc = rootProject.description
+    website = rootProject.website
+    licences = rootProject.licences
 }
 
 // build a jar with source files

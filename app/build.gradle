@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
     defaultConfig {
         applicationId "ren.test.swipemenuerefreshview"
         minSdkVersion 19
@@ -27,4 +27,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
     compile project(':SwipeMenuRefreshView')
+//    compile 'com.github.xypmhxy:SwipeMenueRefreshView:v1.1'
 }

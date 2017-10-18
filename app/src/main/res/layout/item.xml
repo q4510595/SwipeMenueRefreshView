@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.daimajia.swipe.SwipeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    app:clickToClose="true"
-    >
+    app:clickToClose="true">
+
     <LinearLayout
-        android:tag="Bottom4"
         android:id="@+id/bottom_wrapper_2"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="80dp"
+        android:tag="Bottom4">
 
-        <ImageView
-            android:id="@+id/magnifier2"
-            android:src="@mipmap/ic_launcher"
+        <TextView
+            android:id="@+id/top"
             android:layout_width="70dp"
-            android:background="#f7e79c"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="#cfcfcf"
+            android:gravity="center"
+            android:text="置顶" />
 
-        <ImageView
-            android:id="@+id/star2"
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="70dp"
-            android:background="#4cd964"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/noread"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#ffa500"
+            android:gravity="center"
+            android:text="标记未读" />
 
-        <ImageView
-            android:id="@+id/trash2"
-            android:src="@mipmap/ic_launcher"
+        <TextView
+            android:id="@+id/delete"
             android:layout_width="70dp"
-            android:background="#f0f"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="删除" />
     </LinearLayout>
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="18sp"
-        android:text="aaaaa"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="aaaaa"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
 </com.daimajia.swipe.SwipeLayout>
