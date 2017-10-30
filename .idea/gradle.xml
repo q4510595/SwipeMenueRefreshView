@@ -8,9 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/SwipeMenuRefreshView" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/swipemenu" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

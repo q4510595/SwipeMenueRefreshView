@@ -50,11 +50,11 @@ public class MyAdapter extends BaseAdapter {
         top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(finalConvertView.getContext(), "将 " + getItem(position) + " 置顶", Toast.LENGTH_SHORT).show();
                 String a = getItem(position);
                 list.remove(position);
                 list.add(0, a);
                 notifyDataSetChanged();
-                Toast.makeText(finalConvertView.getContext(), "top", Toast.LENGTH_SHORT).show();
             }
         });
         final TextView noread = (TextView) convertView.findViewById(R.id.noread);
@@ -68,6 +68,7 @@ public class MyAdapter extends BaseAdapter {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(finalConvertView.getContext(), "将 " + getItem(position) + " 删除", Toast.LENGTH_SHORT).show();
                 list.remove(position);
                 notifyDataSetChanged();
             }

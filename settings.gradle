@@ -1,1 +1,1 @@
-include ':app', ':SwipeMenuRefreshView', ':swipemenu'
+include ':app'

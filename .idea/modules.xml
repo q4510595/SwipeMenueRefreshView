@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SwipeMenuRefreshView/SwipeMenuRefreshView.iml" filepath="$PROJECT_DIR$/SwipeMenuRefreshView/SwipeMenuRefreshView.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwipeMenueRefreshView.iml" filepath="$PROJECT_DIR$/SwipeMenueRefreshView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/swipemenu/swipemenu.iml" filepath="$PROJECT_DIR$/swipemenu/swipemenu.iml" />
     </modules>
   </component>
 </project>
